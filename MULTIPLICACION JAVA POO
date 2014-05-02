@@ -1,0 +1,27 @@
+import javax.swing.*;
+public class Multiplicacion{
+	public static void main(String[]args){
+		int n1,n2;
+		PMultiplicacion c;
+		n1=Integer.parseInt (JOptionPane.showInputDialog("numero 1"));
+		n2=Integer.parseInt (JOptionPane.showInputDialog("numero 2"));
+		c=new PMultiplicacion(n1,n2);
+		c.Multiplicacion();
+	}
+}
+
+
+
+
+
+public class PMultiplicacion{
+	private int n1,n2,r;
+	public PMultiplicacion(int n1,int n2){
+		this.n1=n1;
+		this.n2=n2;
+	}
+	public void Multiplicacion(){
+		r=n1*n2;
+		System.out.println("el resultado es:"+r);
+	}
+}
